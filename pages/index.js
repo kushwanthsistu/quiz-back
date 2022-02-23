@@ -105,6 +105,7 @@ function processing(data) {
         dscore.innerText = `Score : ${score}` ;
         let xhr = new XMLHttpRequest() ;
         xhr.open('GET',`https://exam-que-api.herokuapp.com/${optedstream}`, true) ;
+        // xhr.open('GET',`http://localhost:3000/${optedstream}`, true) ;
         xhr.send() ;
         xhr.onload = () => {
             let data = xhr.responseText ;
